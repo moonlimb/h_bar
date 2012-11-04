@@ -20,9 +20,8 @@ def index():
 @app.route("/recipe",methods=['POST'])
 def order():
 	particle_config = request.form['particle_config']
-	data=recipe(particle_config)
-	
-	return render_template("recipe.html", code = data)
+	data=recipe(particle_config)	
+	return render_template("recipe.html", code = data[0], ings=data[1])
 
 
 if __name__ == "__main__":

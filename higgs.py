@@ -11,12 +11,13 @@ except MySQLdb.Error, e:
 
 def clean_up(drinks):
 	drink_info = drinks[0][0] #this is a tuple
-	final_ings=""
+	final_ings=[]
 	ing_info=drinks[0][1:][0]
-	for row in ing_inf]
-	final_order="You ordered %s which is %s" %(drink_info[2],drink_info[1])
-	return ing_info	
-	#return final_order + final_ings 
+	for row in ing_info:
+		temp = "%s x %s of %s(%s) " %(row[0], row[3], row[2], row[1])
+		final_ings.append(temp) 
+	final_order="%s which is %s" %(drink_info[2],drink_info[1])
+	return [final_order, final_ings]	
 	
 def recipe(drink_order):
 	cursor=conn.cursor()

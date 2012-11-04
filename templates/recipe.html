@@ -6,7 +6,12 @@
 <div class="font">
 
 
-<h5>You ordered {{ code }}</h5>
+	<h5>You ordered {{ code }} <br /><br />
+		Ingredients:<br />
+		{% for ing in ings %}
+		{{ ing }} <br />
+		{% endfor %}
+</h5>
 
 
 </div>

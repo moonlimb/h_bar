@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<h1>Welcome to the H_Bar</h1>
+
+<hr />
+
+<div class="font">
+<h5>What higgs drink do you want to order?</h5><br />
+
+
+<form action="{{ url_for("order") }}" method = "POST"> 
+    <input type="text" name="particle_config">
+    <input type="submit" id="submit_button">
+
+<br />
+<br />
+</form>
+
+</div>
+
+
+{% endblock %} 

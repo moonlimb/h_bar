@@ -1,0 +1,13 @@
+
+particle_code = 
+
+mesons have 2 ingredients
+barions have 3 ingredients
+decays have.... up to 5 ingredients
+
+proton: uud
+	two up quarks and one down quark
+	which 2 scoops of ice and 1 shot of vodka
+
+neutron: udd
+	two 

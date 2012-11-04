@@ -18,6 +18,17 @@ def clean_up(drinks):
 		final_ings.append(temp) 
 	final_order="%s which is %s" %(drink_info[2],drink_info[1])
 	return [final_order, final_ings]	
+
+def write_menu():
+	cursor=conn.cursor()
+	#query="select * from drinks where name like '%s%' or particle like '%s%'" % (drink_order,drink_order)
+	query="select * from drinks"
+	cursor.execute(query)
+	if(cursor.rowcount > 0):
+		data=cursor.fetchall()
+		return data
+	if(cursor.rowcount == 0):
+		pass
 	
 def recipe(drink_order):
 	cursor=conn.cursor()

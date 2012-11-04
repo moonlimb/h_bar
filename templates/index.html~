@@ -7,7 +7,7 @@
 <hr />
 
 <div class="font">
-<h5>What physics drink do you want to order?</h5><br />
+<h5>What higgs drink do you want to order?</h5><br />
 
 
 <form action="{{ url_for("order") }}" method = "POST"> 

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="font">
+	
+
+	<h5>hbar Menu: </h5>
+	{% for drink in drinks %}
+	<b>{{ drink[2] }}</b> = {{ drink [1]}} <br /><br />
+	
+{% endfor %}
+</div>
+{% endblock %}

@@ -29,7 +29,7 @@ def recipe(drink_order):
 				ing=cursor.fetchone()
 				ings.append([this_component[0],ing[2],ing[3],ing[5]])
 			drinks.append([row,ings])	
-		final_drink = clean_up(drinks)
+		final_drink = clean_up(drinks)_
 		return final_drink
 	if(cursor.rowcount == 0):
 		print 'Not found'
